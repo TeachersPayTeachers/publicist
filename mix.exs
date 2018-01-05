@@ -19,8 +19,8 @@ defmodule Publicist.Mixfile do
   defp package() do
     [
       name: "publicist",
-      files: ["lib", "mix.exs", "README.md", "LICENSE.md"],
-      licenses: ["MIT"], # TODO: get signoff on license
+      files: ["lib", "mix.exs", "README.md", "LICENSE"],
+      licenses: ["MIT"],
       maintainers: ["Shanti Chellaram"],
       links: %{
         "GitHub" => "https://github.com/TeachersPayTeachers/publicist"
