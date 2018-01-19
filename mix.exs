@@ -3,7 +3,7 @@ defmodule Publicist.Mixfile do
 
   def project() do
     [app: :publicist,
-     version: "1.0.0",
+     version: "1.0.1",
      elixir: "~> 1.0",
      name: "Publicist",
      description: description(),
@@ -13,7 +13,7 @@ defmodule Publicist.Mixfile do
   end
 
   defp description() do
-    "Publicist allows developers to test def methods"
+    "Publicist allows developers to test private (defp) methods"
   end
 
   defp package() do
