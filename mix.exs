@@ -13,7 +13,7 @@ defmodule Publicist.Mixfile do
   end
 
   defp description() do
-    "Publicist allows developers to test private (defp) methods"
+    "Publicist allows developers to test private (defp) functions"
   end
 
   defp package() do
