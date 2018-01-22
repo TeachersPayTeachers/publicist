@@ -1,10 +1,11 @@
 defmodule Publicist do
   @moduledoc """
-  Publicist is a module that conditionally makes functions public.
+  Publicist is a module that conditionally makes private functions and macros
+  public.
 
-  To use, `use Publicist`. If the `Mix.env` variable is `:test`, all `defp`
-  calls will be replaced with `def` calls, allowing private methods to be
-  tested.
+  To use, `use Publicist`. If `Mix.env` is `:test` during compilation, all
+  private definitions of functions and macros will be replaced with public
+  ones, allowing them to be tested.
   """
 
   defmacro __using__(opts \\ []) do
