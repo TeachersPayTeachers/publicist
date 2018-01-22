@@ -23,4 +23,11 @@ defmodule Publicist do
       Kernel.def(unquote(whatever), unquote(expr))
     end
   end
+
+  @doc "Alias for `Kernel.defmacro/2` Makes this magic happen."
+  defmacro defmacrop(whatever, expr \\ nil) do
+    quote do
+      Kernel.defmacro(unquote(whatever), unquote(expr))
+    end
+  end
 end
