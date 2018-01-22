@@ -11,8 +11,8 @@ defmodule Publicist do
     envs = Keyword.get(opts, :only, [:test])
     if Enum.member?(envs, Mix.env) do
       quote do
-        import Kernel, except: [defp: 2, defp: 1]
-        import Publicist, only: [defp: 2, defp: 1]
+        import Kernel, except: [defp: 2, defp: 1, defmacrop: 2, defmacrop: 1]
+        import Publicist, only: [defp: 2, defp: 1, defmacrop: 2, defmacrop: 1]
       end
     end
   end
