@@ -3,7 +3,7 @@ defmodule Publicist.Mixfile do
 
   def project() do
     [app: :publicist,
-     version: "1.0.1",
+     version: "1.0.2",
      elixir: "~> 1.0",
      name: "Publicist",
      description: description(),
