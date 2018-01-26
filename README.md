@@ -33,7 +33,7 @@ by adding `publicist` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:publicist, "1.0.0"}]
+  [{:publicist, "1.1.0"}]
 end
 ```
 
