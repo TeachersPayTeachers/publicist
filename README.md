@@ -1,7 +1,7 @@
 # Publicist
 
-Publicist is a module which, when in the test environment, remaps `defp` to
-`def`.
+Publicist is a module which, when in the test environment, remaps `defp` and
+`defmacrop` to `def` and `defmacro`, respectively.
 
 ## Usage
 
