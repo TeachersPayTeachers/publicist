@@ -6,14 +6,11 @@ defmodule Publicist.Mixfile do
      version: "1.0.2",
      elixir: "~> 1.0",
      name: "Publicist",
-     description: description(),
+     description: "Publicist allows developers to test private (defp) functions",
      package: package(),
      source_url: "https://github.com/TeachersPayTeachers/publicist",
-     deps: []]
-  end
-
-  defp description() do
-    "Publicist allows developers to test private (defp) functions"
+     deps: [{:ex_doc, "0.18.1", only: :dev, runtime: false}],
+     docs: docs()]
   end
 
   defp package() do
@@ -25,6 +22,13 @@ defmodule Publicist.Mixfile do
       links: %{
         "GitHub" => "https://github.com/TeachersPayTeachers/publicist"
       }
+    ]
+  end
+
+  defp docs() do
+    [
+      main: "Publicist",
+      extras: ["README.md"],
     ]
   end
 
