@@ -1,5 +1,6 @@
 defmodule PublicistTest.Foo do
   use Publicist
+
   defp bar() do
     0
   end
