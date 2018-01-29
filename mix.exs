@@ -2,15 +2,18 @@ defmodule Publicist.Mixfile do
   use Mix.Project
 
   def project() do
-    [app: :publicist,
-     version: "1.1.0",
-     elixir: "~> 1.0",
-     name: "Publicist",
-     description: "Publicist allows developers to test private (defp) functions",
-     package: package(),
-     source_url: "https://github.com/TeachersPayTeachers/publicist",
-     deps: [{:ex_doc, "0.18.1", only: :dev, runtime: false}],
-     docs: docs()]
+    [
+      app: :publicist,
+      version: "1.1.0",
+      elixir: "~> 1.0",
+      name: "Publicist",
+      description:
+        "Publicist allows developers to test private (defp) functions",
+      package: package(),
+      source_url: "https://github.com/TeachersPayTeachers/publicist",
+      deps: [{:ex_doc, "0.18.1", only: :dev, runtime: false}],
+      docs: docs()
+    ]
   end
 
   defp package() do
@@ -28,7 +31,7 @@ defmodule Publicist.Mixfile do
   defp docs() do
     [
       main: "Publicist",
-      extras: ["README.md"],
+      extras: ["README.md"]
     ]
   end
 
